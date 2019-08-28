@@ -1,0 +1,5 @@
+"0","```r
+tm_shape(countries_spdf) +
+  tm_borders() +
+  tm_fill(col = \"region\")
+```"

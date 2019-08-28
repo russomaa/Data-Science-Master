@@ -1,0 +1,31 @@
+"0","```r
+library(ggmap) # para usar geocode
+library(raster)
+SpainRegions <- getData('GADM', country='ESP', level=1)
+class(SpainRegions)
+str(SpainRegions,max.level = 2)
+tm_shape(SpainRegions)+tm_fill(\"NAME_1\")+tm_layout(\"Comunidades\",
+          legend.position = c(\"left\",\"top\"))
+tm_shape(SpainRegions)+tm_fill(col='red')+tm_facets(\"NAME_1\")
+
+SpainRegions2 <- getData('GADM', country='ESP', level=2)
+qtm(SpainRegions2,fill=\"NAME_2\")+tm_layout(\"Provincias\",
+          legend.position = c(\"left\",\"top\"))
+
+#Quick map
+qtm(SpainRegions2,fill=\"NAME_2\")+tm_layout(legend.show = FALSE,title = \"Provincias\",title.position  = c(\"center\",\"top\"))
+
+# Map 
+tm_shape(SpainRegions2)+tm_fill(\"NAME_2\")+tm_layout(legend.show = FALSE,title = \"Provincias\",title.position  = c(\"center\",\"top\"))
+         
+
+#Otras fuentes
+# SpainRegions <- getData('countries', country='ESP', level=1)
+# qtm(SpainRegions)
+# lonlat<-geocode(\"Spain\")
+# SpainRegions <- getData('SRTM', lon=lonlat$lon,lat=lonlat$lat)
+# qtm(SpainRegions)
+# #SpainRegions <- getData('alt', country='ESP',mask=TRUE)
+# #qtm(SpainRegions)
+
+```"

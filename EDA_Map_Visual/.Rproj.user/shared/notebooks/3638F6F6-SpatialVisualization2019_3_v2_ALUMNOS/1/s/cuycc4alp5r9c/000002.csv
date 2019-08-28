@@ -1,0 +1,6 @@
+"0","```r
+
+SpainRegPoblacion<-sp::merge(SpainRegions,PoblacionSpain,by.x=\"NAME_2\",by.y=\"Provincia\")
+str(SpainRegPoblacion,max.level = 2)
+
+```"

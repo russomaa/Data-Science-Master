@@ -1,0 +1,8 @@
+"0","```r
+SpainRegions3 <- getData('GADM', country='ESP', level=4)
+
+
+tm_shape(SpainRegions3) + tm_fill(\"NAME_4\",legend.show = FALSE)
+# Save un mapa INTERACTIVO
+tmap_save(filename=\"SpainRegions3.html\")
+```"

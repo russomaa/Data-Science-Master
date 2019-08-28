@@ -1,0 +1,9 @@
+{
+    "path" : "~/Master/Big Data/pySpark/Tweets/entregable_tweets",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

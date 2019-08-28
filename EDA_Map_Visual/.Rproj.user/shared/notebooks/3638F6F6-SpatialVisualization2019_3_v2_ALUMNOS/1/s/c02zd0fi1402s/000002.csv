@@ -1,0 +1,13 @@
+"0","```r
+str(SpainRegPoblacion@data)
+tm_shape(SpainRegPoblacion)+tm_fill(paste(2016),style = \"quantile\")+tm_layout(\"Poblacion\",
+          legend.position = c(\"left\",\"top\"))
+tm_shape(SpainRegPoblacion)+tm_fill(paste(2016),style = \"kmeans\")+tm_layout(\"Poblacion\",
+          legend.position = c(\"left\",\"top\"))
+tm_shape(SpainRegPoblacion)+tm_fill(paste(2016),style = \"kmeans\")+tm_layout(\"Poblacion\",
+          legend.position = c(\"left\",\"top\"))+tm_bubbles(size = \"2016\")+tm_compass()#+tm_facets(\"NAME_1\")+
+
+tm_shape(SpainRegPoblacion)+tm_fill(paste(1998:2016),style = \"kmeans\")+tm_layout(\"Poblacion\",
+          legend.position = c(\"left\",\"top\"))
+
+```"

@@ -1,0 +1,21 @@
+"0","```r
+library(tmap)
+library(raster)
+str(pop_by_age,max.level = 2)
+print(pop_by_age@layers) #
+
+#Accesos equivalentes
+pop_by_age@layers[[1]]$under_1
+pop_by_age[[\"under_1\"]]
+plot(pop_by_age)
+tm_shape(pop_by_age)+tm_raster(\"under_1\")
+tm_shape(pop_by_age)+tm_raster(names(pop_by_age),palette = terrain.colors(9),title=\"Population\", auto.palette.mapping=FALSE)
+# Usando rasterVis
+
+library(rasterVis)
+
+vectorplot(pop_by_age)
+densityplot(pop_by_age)
+bwplot(pop_by_age)
+
+```"

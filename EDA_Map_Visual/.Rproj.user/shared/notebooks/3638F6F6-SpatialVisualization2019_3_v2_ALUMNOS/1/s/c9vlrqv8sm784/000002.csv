@@ -1,0 +1,19 @@
+"0","```r
+# data(World)
+# World<-as(World,'Spatial')
+# 
+# tm_shape(World)+tm_borders()+tm_fill(col=\"continent\")
+# 
+# Proyecciones<-c('longlat','wintri','eck4','merc','eqc45','laea_Eur','laea_NA')
+# 
+# for (proy in Proyecciones)
+# {
+# 
+# # DeberÃƒÂ­as tener la misma proyeccion para hacer operaciones con los objetos pero para la presentaciÃƒÂ³n
+# # La funciÃƒÂ³n de dibujo ya lo tiene en cuenta.  
+# #NewWorld<-spTransform(World,CRSobj = get_proj4(proy)) # Produce error 2019 Ã‚Â¿?
+# 
+# show(tm_shape(NewWorld,projection = proy)+tm_borders()+tm_fill(col=\"continent\")+tm_layout(main.title =paste0('ProyecciÃƒÂ³n ',proy),main.title.position = \"center\"))
+#}
+
+```"

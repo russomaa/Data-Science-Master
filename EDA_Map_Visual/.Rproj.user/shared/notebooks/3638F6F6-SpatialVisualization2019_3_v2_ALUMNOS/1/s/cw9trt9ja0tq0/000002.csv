@@ -1,0 +1,4 @@
+"0","```r
+Europe <- countries_spdf[(countries_spdf$region== \"Europe\") & (countries_spdf$name!=\"Russia\"),]
+tm_shape(Europe)+tm_fill(col=\"population\",style=\"quantile\")+tm_text(text = \"iso_a3\")
+```"

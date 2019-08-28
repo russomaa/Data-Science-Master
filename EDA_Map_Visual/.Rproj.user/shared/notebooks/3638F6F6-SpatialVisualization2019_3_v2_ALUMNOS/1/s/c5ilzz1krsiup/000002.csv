@@ -1,0 +1,4 @@
+"0","```r
+#rgdal::writeOGR(obj=LondonSport,dsn = \"./data/Mapas\", layer = \"LondonSport2\",  driver = \"ESRI Shapefile\")
+
+```"

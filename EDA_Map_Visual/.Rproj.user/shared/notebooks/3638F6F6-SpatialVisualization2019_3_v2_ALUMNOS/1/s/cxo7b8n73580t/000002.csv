@@ -1,0 +1,9 @@
+"0","```r
+library(sp)
+library(raster)
+library(tmap)
+str(pop,max.level = 2)
+print(pop) # es equivalente a escribir una variable por consola
+summary(pop)
+plot(pop)#heatmap
+```"

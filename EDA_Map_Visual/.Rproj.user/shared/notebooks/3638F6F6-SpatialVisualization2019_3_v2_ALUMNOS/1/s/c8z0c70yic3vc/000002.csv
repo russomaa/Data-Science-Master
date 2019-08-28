@@ -1,0 +1,6 @@
+"0","```r
+
+# SpainRegions <- getData('GADM', country='ESP', level=1)
+# leaflet(SpainRegions) %>% addPolygons()
+
+```"

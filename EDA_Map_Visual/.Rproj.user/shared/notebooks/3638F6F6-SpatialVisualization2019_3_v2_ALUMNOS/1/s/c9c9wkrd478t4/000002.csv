@@ -1,0 +1,8 @@
+"0","```r
+library(tmap) 
+tm_shape(countries_spdf) +
+  tm_borders()
+
+#tmap_mode('plot') # Modo estÃƒÂ¡tico
+# tmap_mode('view') # Modo dinÃƒÂ¡mico
+```"

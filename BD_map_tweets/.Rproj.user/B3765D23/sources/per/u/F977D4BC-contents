@@ -1,0 +1,18 @@
+---
+title: "Tweets"
+author: "Mayra Russo Botero"
+date: "23 April 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r cars}
+summary(cars)
+```
+
+

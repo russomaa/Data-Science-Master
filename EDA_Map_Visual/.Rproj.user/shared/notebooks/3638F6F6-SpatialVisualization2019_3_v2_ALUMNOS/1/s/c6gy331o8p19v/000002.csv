@@ -1,0 +1,19 @@
+"0","```r
+# specify the RasterLayer with the following parameters:
+# - minimum x coordinate (left border)
+# - minimum y coordinate (bottom border)
+# - maximum x coordinate (right border)
+# - maximum y coordinate (top border)
+# - resolution (cell size) in each dimension
+
+r <- raster(xmn=-0.5, ymn=-0.5, xmx=4.5, ymx=4.5, resolution=c(1,1))
+r <- setValues(r, runif(25))
+#r<-pop_by_age # Podemos probar con el los datos del ejemplo anterior.
+class(r)
+
+crs(r)
+proj <- \"laea_NA\"
+# proj.r<-projectRaster(r, crs= get_proj4(proj))
+# crs(proj.r)
+
+```"

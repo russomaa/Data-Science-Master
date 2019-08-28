@@ -1,0 +1,16 @@
+
+I'm RubeBot, your investment Telegram bot!
+
+These are my commands:
+
+/help: I will show you the introduction message and my available commands! 
+
+/startinvesting: How are you feeling today? Let's start investing based on your risk appetite! 
+
+/stockstatus: I will provide you with my available tickers. Pick one of them and check the current stock behaviour!
+
+/alarm: I can remind you to check your portfolio from time to time. Use "/set" + "time in hours"
+
+/unset : You can turn off the alarm at any time! 
+
+Let's invest together!

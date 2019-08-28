@@ -1,0 +1,29 @@
+"0","```r
+library(tmap)
+SpainRegions <- getData('GADM', country='ESP', level=2)
+
+class(SpainRegions)
+str(SpainRegions,max.level = 2)
+str(SpainRegions@data)
+qtm(SpainRegions,fill=\"NAME_2\")+tm_layout(\"Comunidades\",
+          legend.position = c(\"left\",\"top\"))
+
+#Identificadores
+SpainRegions@polygons[[1]]@ID
+str(SpainRegions@polygons[[1]],max.level = 2)
+
+SpainRegions@polygons[[1]]@Polygons[[1]]
+
+str(SpainRegions@polygons[[1]]@Polygons[[1]],max.level = 2)
+
+#######PreparaciÃƒÂ³n fichero del censo hasta 2016 por provincias. 
+
+library(readr)
+PoblacionSpain <- read_delim(\"./data/PoblacionSpain.csv\", 
+    \"\t\", escape_double = FALSE)
+colnames(PoblacionSpain)[1]<-\"Provincia\"
+PoblacionSpain[-1]<-lapply(PoblacionSpain[-1],as.numeric)
+save(PoblacionSpain,file=\"./data/PoblacionSpain.RData\")
+#######fin PreparaciÃƒÂ³n fichero del censo hasta 2016 por provincias
+load(file=\"./data/PoblacionSpain.RData\")
+```"

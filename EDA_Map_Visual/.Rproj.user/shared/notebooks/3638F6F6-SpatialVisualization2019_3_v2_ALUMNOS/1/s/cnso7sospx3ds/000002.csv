@@ -1,0 +1,16 @@
+"0","```r
+
+library(ggmap)
+library(rgdal)
+library(rgeos)
+library(maptools)
+library(dplyr)
+library(tidyr)
+library(tmap)
+library(geospatial) # Instalado en los programas del dÃƒÂ­a 
+library(sp)
+library(maps)
+library(raster)
+library(tmaptools)
+library(leaflet)
+```"

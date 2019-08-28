@@ -1,0 +1,17 @@
+"0","```r
+any(duplicated(SpainRegions$NAME_2))
+SpainRegions$NAME_2[duplicated(SpainRegions$NAME_2)]
+
+any(duplicated(PoblacionSpain$Provincia))
+PoblacionSpain$`2016`[duplicated(PoblacionSpain$Provincia)]
+
+# Buscamos coincidencias en ambos sentidos (se podria hacer con la librerÃƒÂ­a operaciones join dplyr )
+# 
+all((SpainRegions$NAME_2 %in% PoblacionSpain$Provincia))
+
+# Coincidencida en el otro sentido
+all((PoblacionSpain$Provincia %in% SpainRegions$NAME_2))
+
+setdiff(SpainRegions$NAME_2,PoblacionSpain$Provincia)
+setdiff(PoblacionSpain$Provincia,SpainRegions$NAME_2)
+```"

@@ -1,0 +1,6 @@
+"0","```r
+#hay que arreglar el cÃƒÂ³digo de arriba 
+#Proyecciones<-c('longlat','wintri','eck4','merc','eqc45','laea_Eur','laea_NA')
+#for (tipo_Proy is Proyecciones) (
+ # p <- tm_shape(countries_spdf,projection =tipo_Proy, title= paste(\"ProyecciÃƒÂ³n\", tipo_Proy)) + tm_grid(n.y =11) + tm_fill(col=\"Population\",style=\"quantile\")
+```"

@@ -1,0 +1,17 @@
+"0","```r
+vectorDir<-\"./data/Mapas/\"
+list.files(vectorDir, pattern=\"*.shp\")
+#InformaciÃƒÂ³n del mapa
+ogrInfo(dsn=vectorDir, layer=\"london_sport\")
+
+# NÃƒÂºmero de ficheros que forman el mapa
+list.files(vectorDir, pattern=\"london_sport*\")
+
+LondonSport<-readOGR(dsn=\"./data/Mapas/\",layer=\"london_sport\")
+str(LondonSport,max.level = 2)
+#RepresentaciÃƒÂ³n genÃƒÂ©rica
+plot(LondonSport)
+#RepresentaciÃƒÂ³n con tmaps
+tm_shape(LondonSport)+tm_borders()+tm_fill(\"Partic_Per\")
+tm_shape(LondonSport)+tm_borders()+tm_fill(\"Partic_Per\",style=\"quantile\")
+```"

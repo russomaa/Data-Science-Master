@@ -1,0 +1,10 @@
+"0","```r
+library(raster)
+
+countries_spdf@data <- dplyr::mutate(countries_spdf@data, dens=1e06*population/area(countries_spdf))
+
+tm_shape(countries_spdf) +
+  tm_borders() +
+  tm_fill(col = \"dens\",style=\"quantile\") +
+  tm_text(text=\"iso_a3\", size=\"AREA\")
+```"

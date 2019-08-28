@@ -1,0 +1,17 @@
+"0","```r
+# Numero de ficheros que forman el mapa
+MigrationG<-readGDAL(\"./data/halfdegree-net-migration-1990-2000.tif\")
+MigrationR<-raster(\"./data/halfdegree-net-migration-1990-2000.tif\")
+str(MigrationG)
+str(MigrationR)
+plot(MigrationR)
+tm_shape(MigrationG)+tm_raster()
+tm_shape(MigrationG)+tm_raster(style=\"quantile\")
+tm_shape(MigrationG)+tm_raster(style=\"quantile\")+tm_format_World()
+
+# Con tmap tambiÃƒÂ©n podemos representar objetos RasterLayer
+tm_shape(MigrationR)+tm_raster()
+#Visualizamos con rasterVis (Hay muchos formatos de grÃƒÂ¡ficos).Este es un grÃƒÂ¡fico de niveles
+library(rasterVis)
+levelplot(MigrationR)
+```"

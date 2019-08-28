@@ -1,0 +1,7 @@
+"0","```r
+
+#ETSE<-geocode(\"ETSE, Valencia, Spain\")
+#m <- leaflet() %>% setView(lng = ETSE$lon, lat = ETSE$lat, zoom = 15)
+#m %>% addTiles()
+
+```"

@@ -1,0 +1,21 @@
+"0","```r
+#InstalaciÃƒÂ³n de librerÃƒÂ­as (readr y stringr deben estar instaladas)
+options(repos='http://cran.rstudio.com/')
+library(readr)
+library(stringr)
+
+aux<-read_lines('SpatialVisualization2019_3_v2_ALUMNOS.Rmd')
+#aux<-LineasLibrerias<-aux[str_detect(aux,'^(library)\\(.*.\\)$')]
+aux<-aux[str_detect(aux,'(library)\\(.*.\\)$')]
+librerias <- str_match(aux, \"library\\((.*.)\\)+\")[,2] %>% str_replace(\"\\)\",\"\") %>% unique # Un poco chapuzilla
+
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, \"Package\"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+# usage
+ipak(librerias)
+```"

@@ -1,0 +1,23 @@
+"0","```r
+library(sp)
+library(tmap)
+
+tm_shape(countries_spdf) +
+  tm_grid(n.x = 11, n.y = 11, projection = \"longlat\") +
+  tm_fill(col = \"population\", style = \"quantile\",alpha = 0.2)  +
+  tm_borders(col = \"burlywood4\")
+
+# Guardar un mapa ESTÃƒÂTICO
+tmap_save(filename=\"population.png\")
+
+# Save un mapa INTERACTIVO
+tmap_save(filename=\"population.html\")
+
+# La opciÃƒÂ³n por defecto, cuando se utiliza tmap es que el mapa sea interactivo.
+
+p<-tm_shape(countries_spdf,projection=\"laea_NA\",title=paste(\"ProyecciÃƒÂ³n:\",\"laea_NA\"))+ tm_grid(n.x = 11, n.y = 11) +tm_fill(col =\"population\", style = \"quantile\")  +tm_borders(col = \"black\",alpha=0.2) 
+  show(p)
+  # La proyecciÃƒÂ³n no se mantiene en el mapa interactivo.
+  tmap_save(filename=\"InteractivoProyeccion.html\")
+  
+```"

@@ -1,0 +1,7 @@
+"0","```r
+tm_shape(countries_spdf) +
+  tm_borders() +
+  tm_fill(col = \"region\") +
+  tm_text(text=\"iso_a3\", size=0.5)
+
+```"

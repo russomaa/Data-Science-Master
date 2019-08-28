@@ -1,0 +1,5 @@
+"0","```r
+Clima <- getData('worldclim',res=10,var=\"prec\")
+str(Clima,max.level = 2)
+plot(Clima)
+```"
