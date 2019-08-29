@@ -6,7 +6,7 @@ Portfolio of projects I completed during the master's program in Data Science (2
 1. [Active Learning](#al)
 2. [Spark-MLlib](#mllib)
 3. [Movie Recommendation System](#recomm)
-4. [Tweets Capture](#tweets)
+4. [Tweets Analysis](#tweets)
 5. [Geospatial Data](#map)
 6. [Data Visualization Python](#crime)
 7. [Dash Web App](#dash)
@@ -41,6 +41,12 @@ Develop a collaborative filtered type recommendation system usign the ALS algori
 
 <img src="images/filtrado_colaborativo.png" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
 
+### Tweets Analysis <a name="tweets"></a>
+Capture in real time, store, and process tweets in order to visualize in a map the origin of tweets in line with a movie premiere event. 
+
+<img src="images/endgame_mapcode(1).png" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
+<img src="images/endgame_mapcode.png" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
+
 ### Geospatial Data in R <a name="map"></a>
 Visualization of geospatial data obtained from the Spanish National Statistics Office.
 
@@ -58,12 +64,6 @@ Example of an interactive web app using the Dash package and Python.
 
 <img src="images/dash_1.PNG" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
 <img src="images/dash_2.PNG" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
-
-### Tweets Analysis <a name="tweets"></a>
-Capture in real time, store, and process tweets in order to visualize in a map the origin of tweets in line with a movie premiere event. 
-
-<img src="images/endgame_mapcode(1).png" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
-<img src="images/endgame_mapcode.png" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
 
 ### Investment Telegram Bot <a name="bot"></a>
 Chatbot that acts as a personal investment assistant integrated into an instant messaging platform as Telegram.
