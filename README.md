@@ -1,9 +1,6 @@
-# Data-Science-Master
+<h4 style = "text-align:center; font-size:300%"> Master's in Data Science</h1>
 
-
-<h1 style = "text-align:center; font-size:300%"> Portfolio of projects completed during the master's program in Data Science (2018-2020) </h1>
-<br>
-
+Portfolio of projects I completed during the master's program in Data Science (2018-2020) though the University of Valencia 
 <br>
 ### Table of Contents
 1. [Active Learning](#al)
@@ -73,5 +70,5 @@ Chatbot that acts as a personal investment assistant integrated into an instant 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Telegram_alternative_logo.svg/1024px-Telegram_alternative_logo.svg.png" width="30" style="margin-right:0px; border: 0px solid #ccc;" /> : @CDNG6_bot
 
-<img src="images/bot_1.PNG" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
-<img src="images/bot_2.PNG" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
+<img src="images/bot1.PNG" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
+<img src="images/bot2.PNG" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
