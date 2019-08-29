@@ -44,7 +44,7 @@ Develop a collaborative filtered type recommendation system usign the ALS algori
 ### Geospatial Data in R <a name="map"></a>
 Visualization of geospatial data obtained from the Spanish National Statistics Office.
 
-<img src="assets/images/shiny_1_1.PNG" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
+<img src="images/ComVal Map.png" width="500" style="margin-right:5px; border: 1px solid #ccc;" />
 
 
 ### Data Visualization in Python <a name="crime"></a>
