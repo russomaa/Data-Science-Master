@@ -1,6 +1,6 @@
-<h4 style = "text-align:center; font-size:300%"> Master's in Data Science</h1>
+<h4 style = "text-align:center; font-size:300%"> Portfolio Master's in Data Science</h1>
 
-Portfolio of projects I completed during the master's program in Data Science (2018-2020) though the University of Valencia 
+ Sample of projects completed during the master's program in Data Science (2018-2020) though the University of Valencia 
 <br>
 ### Table of Contents
 1. [Active Learning](#al)
