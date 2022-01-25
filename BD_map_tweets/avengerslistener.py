@@ -9,10 +9,7 @@ from pymongo import MongoClient
 import datetime
 
 # Your credentials go here
-consumer_key = 'o5Guiti6WZCFche9azXdbb9iF'
-consumer_secret = 'IeYL9KBhCj5ftgDiyOWSnSXuZ7cVOSDWrZPPZXFlj5RHVBhZ0S'
-access_token = '19362646-jAeA1DZv16WsNIbTrwHNIcwfPZLHXI7EoU24knx65'
-access_secret = 'Zgl15C95n4rtDMttAUJcA9GjXmMkW60jv7cFduBYNgn9V'
+
 
 class AvengersListener(StreamListener):
 
